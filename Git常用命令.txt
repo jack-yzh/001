@@ -1,0 +1,56 @@
+配置Git用户：
+git config --global user.name "Jack-yzh"
+git config --global user.email "1669564699@qq.com"
+
+查询是否配置成功
+git config --global user.name 
+git config --global user.email
+
+创建仓库：
+cd c:/目录名
+git init
+
+查询所有文件:
+ls -al
+
+提交代码：
+git add 文件名/目录名
+git add . 添加目录全部文件
+
+git commit -m "提交信息注释"
+
+查看修改情况：
+git status
+
+查看更改内容：
+git diff 具体文件目录
+
+撤销未提交的修改
+git checkout
+
+撤销提交的修改
+git reset 目录
+git checkout
+
+查看提交信息
+git log 
+
+查询分支
+git branch
+
+添加分支
+git branch 分支名
+
+同步Github远程代码库到本地
+git clone https://或者SSH地址
+
+将本地同步到远程
+git push origin master
+
+将云端修改同步到本地两种方法：
+1.
+git fetch origin master
+(git diff origin/master查看修改内容)
+git merge origin/master合并内容
+2.
+git pull origin master直接合并
